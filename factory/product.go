@@ -32,7 +32,7 @@ func (p2 *Product2) GetName() string {
 	return "产品2的名称：" + p2.name
 }
 
-// 实现简单工厂类
+// 实现简单工厂
 type ProductType int
 
 const (

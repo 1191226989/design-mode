@@ -8,4 +8,6 @@ develop design mode as golang
 
 ![RUNOOB 图标](images/static-factory-method.png "RUNOOB")
 
-
+- 优点：实现了解耦
+- 缺点：违背了“开闭原则”
+- 适合：创建的对象比较少
