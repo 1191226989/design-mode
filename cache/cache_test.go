@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestCaChe_Create(t *testing.T) {
+func TestCache_Create(t *testing.T) {
 	redisCache := &RedisCache{
 		data: map[string]string{},
 	}
@@ -19,7 +19,7 @@ func TestCaChe_Create(t *testing.T) {
 	fmt.Println(memoryCache.Get("key2"))
 }
 
-func TestCaCheFactory_Create(t *testing.T) {
+func TestCacheFactory_Create(t *testing.T) {
 	cacheFactory := &CacheFactory{}
 
 	redis, err := cacheFactory.Create(CACHE_REDIS)
